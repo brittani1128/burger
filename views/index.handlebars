@@ -1,0 +1,44 @@
+<div>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="m-3" style="border:1px solid black; height:600px;margin:30px;">
+                <h2 class="text-center">Menu</h2>
+                <ol>
+                    {{#each burgers}} 
+
+                    {{/each}}
+                </ol>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="row">
+                <div style="border:1px solid black; height:300px; margin:30px;">
+                    <h3>Cart</h3>
+                    <ol>
+                        {{#each burgers}} 
+                        {{#if inCart}} 
+                        {{!-- {{> burgers/burger-block inCart=false}} --}} 
+                        {{/if}} 
+                        {{/each}}
+                    </ol>
+                </div>
+            </div>
+            <div class="row">
+                <div style="border:1px solid black; height:200px; margin:30px;">
+                    <h3>Customize</h3>
+                
+                    <form class="create-form">
+
+                        <div class="form-group">
+                            <label for="newBurgerName">Burger Name:</label>
+                            <input type="text" id="newBurgerName" name="name">
+                        </div>
+                        <button type="submit">Add Burger</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
