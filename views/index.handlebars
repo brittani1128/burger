@@ -3,9 +3,15 @@
         <div class="col-md-8">
             <div class="section" id="menu">
                 <h2 class="text-center">Menu</h2>
+                <hr>
                 <ol id="menuItems">
                     {{#each burgers}} 
-                      <li class="listItem">{{name}}</li><button>Add to Cart</button>
+                      {{#unless inCart}}
+                        <li class="listItem">{{name}}</li>
+                        <button class="addCart" data-id="{{id}}">Add to Cart</button>
+                        <button class="delete" data-id="{{id}}">Delete</button> 
+                        <hr>
+                      {{/unless}}
                     {{/each}}
                 </ol>
             </div>
@@ -15,10 +21,14 @@
                 <div class="row">
                     <div class="section" id="cart">
                         <h3 class="text-center">Cart</h3>
+                        <hr>
                         <ol id="cartItems">
                             {{#each burgers}} 
                             {{#if inCart}} 
-                                <li>{{name}} </li>
+                                <li class="cartItem">{{name}}</li>
+                                <button class="removeCart" data-id="{{id}}">Remove</button>
+                                <button class="delete" data-id="{{id}}">Delete</button> 
+                               
                             {{/if}} 
                             {{/each}}
                         </ol>
@@ -27,6 +37,7 @@
                 <div class="row">
                     <div class="section" id="customize">
                         <h3 class="text-center">Customize</h3>
+                        <hr>
                     
                         <form class="create-form">
 
@@ -34,7 +45,7 @@
                                 <label for="newBurgerName">Burger Name:</label>
                                 <input type="text" id="newBurgerName" name="name">
                             </div>
-                            <button type="submit">Add Burger</button>
+                            <button class="submit" type="submit">Add Burger</button>
                         </form>
                     </div>
                 </div>

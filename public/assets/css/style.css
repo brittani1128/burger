@@ -21,12 +21,17 @@ body {
 .section {
     background:white;
     border: 2px solid black;
+    border-radius: 10px;
 }
 
 #menu {
-    height:550px;
+    height:600;
     margin:30px 0px;
     margin-right:10px;
+}
+
+hr {
+    margin: 10px 0px;
 }
 
 #menuItems {
@@ -40,22 +45,32 @@ body {
 }
 
 .wrapper {
-    height:550px;
+    height:600px;
     margin: 30px 0px;
     margin-left:10px;
     position:relative;
 }
 
 #cart {
-    height:60%;
-    position:absolute;
+    min-height:250px;
+    /* position:absolute; */
     top:0;
     width:100%;
 }
 
+#cartItems {
+    padding: 10px 40px;
+    font-size:18px;
+}
+
+.cartItem {
+    margin:5px 0px;
+}
+
 #customize {
-    position:absolute;
-    bottom:0;
+    /* position:absolute; */
+    /* bottom:0; */
+    margin-top:50px;
     width:100%;
     height:30%;
 }
@@ -63,6 +78,7 @@ body {
 button {
     padding:5px;
     font-size:12px;
+    border-radius: 10px;
     
 }
 
