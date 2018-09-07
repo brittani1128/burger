@@ -79,9 +79,26 @@ button {
     padding:5px;
     font-size:12px;
     border-radius: 10px;
+    border:1px solid black;   
+}
+
+.addCart {
+    background-color: #fff054a1;
+    margin-right:10px;
+}
+
+.delete {
+    background-color: #96c6e7b3;
     
 }
 
+.removeCart {
+    background-color: #a7ea5573;
+}
+
+.submit {
+    background-color: #ff9800b5;
+}
 .create-form {
     padding: 10px 30px;
 }
