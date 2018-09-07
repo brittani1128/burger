@@ -52,15 +52,16 @@ hr {
 }
 
 #cart {
-    min-height:250px;
+    min-height:200px;
     /* position:absolute; */
     top:0;
     width:100%;
 }
 
 #cartItems {
-    padding: 10px 40px;
-    font-size:18px;
+    padding: 0px 40px;
+    font-size:16px;
+    margin-bottom:25px;
 }
 
 .cartItem {
@@ -70,9 +71,9 @@ hr {
 #customize {
     /* position:absolute; */
     /* bottom:0; */
-    margin-top:50px;
+    margin-top:40px;
     width:100%;
-    height:30%;
+    height:200px;
 }
 
 button {
@@ -94,12 +95,16 @@ button {
 
 .removeCart {
     background-color: #a7ea5573;
+    margin-right:10px;
 }
 
 .submit {
     background-color: #ff9800b5;
+    margin:auto;
 }
 .create-form {
     padding: 10px 30px;
+    text-align: center;
+    font-size:18px;
 }
 
